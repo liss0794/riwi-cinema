@@ -1,1 +1,26 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+:root { 
+    --azul-oscuro: #181E4B;
+    --color-texto: white;
+    --tamaño-texto-normal: 2rem;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--azul-oscuro);
+    color: var(--color-texto);
+    font-size: var(--tamaño-texto-normal);
+    padding: 0px 15px;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,17 +1,26 @@
+/* traemos el bootstrap para usar los iconos con enlaces mas cortos */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* fijamos unos valores */
 :root { 
     --rosa: #f680ec;
     --color-texto: rgb(0, 0, 0);
     --tamaño-texto-normal: 1rem;
 
 }
+/* lo aplicamos para toda la pagina */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins";
     
+    
 }
+.main{
+    margin:50px;
+}
+/* acomodamos todo lo que esta en la cabecera */
 .header{
     display: flex;
     align-items: center;
@@ -22,20 +31,70 @@
     padding: 0px 15px;
     
 }
-
+/* le damos el color a la barra de navegacion y al texto */
 .nav a{
     color: var(--color-texto);
+    background-color: var(--rosa);
 }
+/* centramos el subtitulo de estreno */
+.h2{
+    text-align: center;
+    font-size: xx-large;
+
+}
+/* quitamos la linea debajo de los enlaces */
 a{
     text-decoration: none;
 }
-
+/* organizamos las imagenes una al lado de la otra */
 #estrenos{
     display: flex;
     object-fit: contain;
+    
 
 }
+/* organizamos las imagenes de la carteelera  */
 #carteleras{
     display: flex;
     flex-wrap: wrap;
 }
+/* dejamos los espacios entre las imagenes y las posicionamos */
+#article{
+    position: relative;
+    width: calc(33.33% - 20px); /* 3 películas en una fila con espacio entre ellas */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+ /* .descripcion{
+    position: relative;
+    width: calc(33.33% - 20px); 
+    overflow: hidden;
+    display: flex;  
+}  */
+/* dentro de cada pagina de las peliculas los organizamos por filas y columns y le ponemos un color de fondo */
+.fila{
+    display: flex;
+    background-color: #f7eaf6;
+}
+.columna{
+    flex:1;
+    padding: 50px ;
+    width: calc(33.33% - 20px);
+    margin: 10px; 
+    
+}
+/* organizamos el parrafo de la descripcion de la pelicula */
+#sinopsis{
+    text-align: justify;
+    margin: 10px;
+}
+#p{
+    text-align: justify;
+    margin: 10px;
+}
+# 
+/* #pelicula{
+    text-align: unset;
+    margin: 50px;
+} */
